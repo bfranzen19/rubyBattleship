@@ -45,25 +45,25 @@ describe Battleship do
     it 'the beginning edge of the Submarine' do
       turn = subject.fire!('I7') # Hits the Submarine
 
-      expect(turn).to be true
+      expect(turn).to be_truthy
     end
 
     it 'the middle of the Battleship' do
       turn = subject.fire!('G9') # Hits the Battleship
 
-      expect(turn).to be true
+      expect(turn).to be_truthy
     end
 
     it 'the ending edge of the Carrier' do
       turn = subject.fire!('E6') # Hits the Carrier
 
-      expect(turn).to be true
+      expect(turn).to be_truthy
     end
 
     it 'the ending edge of the Banana' do
       turn = subject.fire!('B5')
 
-      expect(turn).to be true
+      expect(turn).to be_truthy
     end
 
     it 'returns type of ship when sunk' do
