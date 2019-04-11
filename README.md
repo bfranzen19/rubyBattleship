@@ -27,8 +27,13 @@ a ship (and ideally, the ship's type if we've hit it enough times to sink it).
 
 Your goal is to make the specs pass. Feel free to add additional specs if helpful.
 
-We'd love to see thoughtful commits made explaining the process you're going 
+We'd love to see thoughtful commits made explaining the process you're going
 through to solve the problem.
+
+If Ruby's not your thing, we'll happily accept submissions in a different language.
+
+Please spend no more than two hours on this exercise. We imagine you've got more
+exciting things to do!
 
 ## Installation
 
