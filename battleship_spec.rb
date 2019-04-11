@@ -67,7 +67,7 @@ describe Battleship do
     end
 
     it 'returns type of ship when sunk' do
-      pending 'maybe one day'
+      pending 'bonus points'
 
       turn = subject.fire!('B4')
       expect(turn).to be true
