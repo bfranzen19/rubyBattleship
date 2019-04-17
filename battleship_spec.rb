@@ -37,14 +37,24 @@ describe Battleship do
     }
   end
 
-  let(:game) { Battleship.new([carrier, battleship, submarine, banana]) }
+  ### for testing west placement of ships
+  let(:banaynay) do
+    {
+      type: :banaynay,
+      position: 'F2',
+      direction: :west,
+      length: 2
+    }
+  end
+
+  let(:game) { Battleship.new([carrier, battleship, submarine, banana, banaynay]) }
 
   subject { game }
 
   context 'hits' do
     it 'the beginning edge of the Submarine' do
       turn = subject.fire!('I7') # Hits the Submarine
-
+      puts turn
       expect(turn).to be true
     end
 
@@ -64,6 +74,13 @@ describe Battleship do
       turn = subject.fire!('B5') # Hits the Banana
 
       expect(turn).to be true
+    end
+
+    ## testing the west placement
+    it 'the banaynay' do
+        turn = subject.fire!('F2') #hits the banaynay
+
+        expect(turn).to be true
     end
 
     it 'returns type of ship when sunk' do
