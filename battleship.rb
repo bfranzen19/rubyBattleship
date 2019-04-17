@@ -163,6 +163,7 @@ class Battleship
             return true
           else
             puts "you sank the #{boat}!"
+            # return [true,boat]
             return boat
           end
       else
