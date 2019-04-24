@@ -40,12 +40,6 @@ exciting things to do!
 Feel free to update `.ruby-version` if you've got a more recent version of Ruby
 already installed that you'd rather use.
 
-```
-git clone git@github.com:bonusly/battleship.git # update to reflect your fork
-cd battleship
-bundle
-```
-
 ## Running the specs
 
 `bundle exec rspec battleship_spec.rb`
